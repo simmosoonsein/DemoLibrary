@@ -34,5 +34,3 @@ There is possibility to run tests 2 different ways:
 ###Test sample video
 You can check how samle set of tests run here: https://youtu.be/9yuMseqR-UE
 
-
-# DemoLibrary

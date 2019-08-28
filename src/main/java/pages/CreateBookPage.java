@@ -24,7 +24,7 @@ public class CreateBookPage {
 
 
   @Step("Verify that New Book input page is open")
-  public CreateBookPage verifyIfPageOpen() {
+  public CreateBookPage verifyIfNewBookRegisterPageOpen() {
     assertThat("Create Book page not opened!",
         titleTextfield.isDisplayed() && submitButton.isDisplayed() && isbnTextfield.isDisplayed());
     return this;

@@ -12,7 +12,7 @@ public class AllBooksPage extends BasePage {
 
 
   @Step("Verify that Local Library Homepage is open")
-  public AllBooksPage verifyIfPageOpen() {
+  public AllBooksPage verifyIfAllBooksListPageOpen() {
     assertThat("Local Library Homepage page not opened!",
         pageContent.findElement(By.tagName("h1")).getText().equals("Book List"));
     return this;

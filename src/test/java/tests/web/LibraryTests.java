@@ -31,25 +31,25 @@ public class LibraryTests {
   @Test(description = "Add new book to catalogue", dataProvider = "Books")
   public void addNewBook(String title, String author, String summary, String isbn, String genre) {
     new BasePage().navigateToUrl()
-        .verifyIfPageOpen()
+        .verifyIfMainLibraryPageOpen()
         .clickCreateNewBook()
-        .verifyIfPageOpen()
+        .verifyIfNewBookRegisterPageOpen()
         .fillBookTitle(title)
         .fillAuthor(author)
         .fillSummary(summary)
         .fillIsbn(isbn)
         .selectGerne(genre)
         .clickSubmitButton()
-        .verifyIfPageOpen()
+        .verifyIfBookDetailsPageOpen()
         .verifyNewBookDetailsShown(title, author, summary, isbn, genre);
   }
 
   @Test(description = "Verify newly added book is listed in catalogue", dataProvider = "Books")
   public void verifyNewlyAddedBookIsInCatalogue(String title, String author, String summary, String isbn, String genre) {
     new BasePage().navigateToUrl()
-        .verifyIfPageOpen()
+        .verifyIfMainLibraryPageOpen()
         .clickAllBooks()
-        .verifyIfPageOpen()
+        .verifyIfAllBooksListPageOpen()
         .verifyNewlyAddedBookIsVisible(title, author);
   }
 

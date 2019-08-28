@@ -23,7 +23,7 @@ public class BasePage {
   }
 
   @Step("Verify that Local Library Homepage is open")
-  public BasePage verifyIfPageOpen() {
+  public BasePage verifyIfMainLibraryPageOpen() {
     assertThat("Local Library Homepage page not opened!",
         pageContent.findElement(By.tagName("h1")).getText().equals("Local Library Home")
             && newBookUrl.isDisplayed() && allBooksUrl.isDisplayed());

@@ -12,7 +12,7 @@ public class BookDetailsPage extends BasePage {
   private String pageContentText = pageContent.getText();
 
   @Step("Verify that Book Details page is open")
-  public BookDetailsPage verifyIfPageOpen() {
+  public BookDetailsPage verifyIfBookDetailsPageOpen() {
     assertThat("Book Details page not opened!",
         pageContent.findElement(By.tagName("h1")).getText().contains("Title:"));
     return this;
