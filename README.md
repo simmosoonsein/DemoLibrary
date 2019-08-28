@@ -31,5 +31,5 @@ There is possibility to run tests 2 different ways:
 * TestNG: Open *Tests class, right mouse click on desired test and press "Run.."
 * Terminal: For Mac type: './gradlew test' this will run all test cases under 'tests' folder
 
-###Test sample video
+### Test sample video
 You can check how samle set of tests run here: https://youtu.be/9yuMseqR-UE
