@@ -1,6 +1,5 @@
 # Demo Library tests
 
-### Intro
 This demo project will run tests on Web:
 =======
 This demo project will run tests on Chrome browser for:
