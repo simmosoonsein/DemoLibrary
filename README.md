@@ -20,7 +20,7 @@ There are 2 tests in total.
 1. Creates new books based ont defined test data with TestNG dataprovider
 2. Checks if new books are visible in "All books" list
 
-Test page URL is defined in 'testrun.properties' file
+Test page URL is defined in 'testrun.properties' file.
 New books are added based on the data described in dataprovider. Meaning tests will be executed as many times as there is data in dataprovider. At the moment tests will be executed 2 times with following data:
 * "Book1", "Lewis", "Summary1", "215788", "Fiction"
 * "Book2", "Kenobi", "Summary2", "215789", "Non-fiction"
